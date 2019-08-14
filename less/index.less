@@ -62,10 +62,27 @@ html, body {
 	justify-content: flex-end;
 	align-items: center;
 }
+.myflex(){
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.myCol(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
 @light-G: lightGrey;
+@dark-G: Grey;
+@myborder: 0px solid brown;
+@myborder1: 1px solid lightGrey;
 .container{
+	
+	border: @myborder;
 	width: 100%;
-	height: 100%;
+	height: 260vh;
 	display: flex;
 	flex-direction: column;
 	margin: 5% 10%;
@@ -74,12 +91,110 @@ html, body {
 		width: 80%;
 		height: 20vh;
 		.disEnd();
+		nav{
+			width: 40%;
+			
+		  .myflex();
+
+		}
+		a{
+			text-decoration: none;
+			font-size: 1.3rem;
+			color: @dark-G;
+		}
 	}
 	.Intro{
+        border: @myborder;
 		width: 80%;
-		height: 80vh;
+		height: 230vh;
 		background-color: @light-G;
 		padding: 5%;
+		div{
+		  border: @myborder;
+		  height: 60%;
+		  padding-top: 5%;
+		  padding-bottom: 5%;
+		  .myCol();
+		  h1{
+			  height: 10%;
+		  }
+		  h2{
+			  height: 10%;
+		  }
+		  p{
+			  height: 10%;
+		  }
+		  button{
+			  color: white;
+			  background: @dark-G;
+			  width: 15%;
+			  height: 15%;
+		  }
+		} //end of inro div
 	}
-}
+	img{
+		width: 40%;
+	}
+	h1{
+		font-size: 3.0rem;
+	}
+	h2{
+		font-size: 2.4rem;
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h4{
+		font-size: 1.8rem;
+	}
+	p{
+		font-size: 1.4rem;
+		line-height: 30px;
+	}
+    .Middle{
+		border: @myborder;
+		width: 80%;
+		height: 180vh;
+		.myflex();
+		.inner1, .inner2{
+			border: @myborder;
+			width: 50%;
+			height: 100%;
+		}
+
+	}
+	.inner2{
+		.myCol();
+		h2{
+			height: 20%;
+		}
+		.myTable{ 
+			height: 100%;
+		    border: @myborder;
+			div{
+		      text-align: center;
+			  padding: 5%;
+			  width: 80%;
+			  height: 20%;
+			  border: @myborder1;
+			}
+		}
+	}
+	.inner1, .inner2{
+		padding: 4%;
+		p{
+			margin-top: 6%;
+			padding: 4%;
+			width: 75%;
+
+		}
+	}
+	
+	.End{
+		border: @myborder;
+		
+		height: 40vh;
+	}
+	
+}//End of Container
 
