@@ -254,7 +254,6 @@ body {
   width: 75%;
 }
 .container .End {
-  border: 0px solid brown;
   width: 80%;
   height: 80vh;
   display: flex;
@@ -262,8 +261,8 @@ body {
   align-items: center;
 }
 .container .End .Endinner1 {
+  margin-top: 2%;
   padding: 2% 5%;
-  border: 0px solid brown;
   height: 80%;
   width: 80%;
 }
@@ -271,7 +270,7 @@ body {
   padding-bottom: 2%;
 }
 .container .End .Endinner2 {
-  margin-top: 2%;
+  margin-top: 5%;
   height: 15%;
   width: 80%;
   background: Grey;
@@ -284,8 +283,8 @@ body {
   font-weight: bold;
 }
 .container table {
-  height: 90%;
-  width: 100%;
+  height: 20vh;
+  width: 80%;
 }
 .container table tr {
   border-bottom: 2px solid lightGrey;
@@ -293,6 +292,7 @@ body {
   font-size: 1.6rem;
 }
 .container table tr:nth-child(1) {
+  font-weight: bold;
   height: 7vh;
 }
 .container table tr:nth-child(2),
