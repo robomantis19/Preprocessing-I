@@ -286,10 +286,10 @@ body {
 .container table {
   height: 90%;
   width: 100%;
-  border: 2px solid lightGrey;
 }
 .container table tr {
-  border: 2px solid lightGrey;
+  border-bottom: 2px solid lightGrey;
+  border-top: 2px solid lightGrey;
   font-size: 1.6rem;
 }
 .container table tr:nth-child(1) {

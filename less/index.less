@@ -73,11 +73,15 @@ html, body {
 	justify-content: space-between;
 	
 }
-
+.TopBotBorder(){
+  border-bottom: 2px solid lightGrey;
+  border-top: 2px solid lightGrey;
+}
 @light-G: lightGrey;
 @dark-G: Grey;
 @myborder: 0px solid brown;
 @myborder1: 2px solid lightGrey;
+
 .container{
 	
 	border: @myborder;
@@ -225,10 +229,10 @@ html, body {
 	table{
 		height: 90%;
 		width: 100%;
-		border: @myborder1;
+		
 
 		tr{
-			border: @myborder1;
+			.TopBotBorder();
 			font-size: 1.6rem;
 		}
 		tr:nth-child(1){
