@@ -52,11 +52,34 @@ table {
 * {
     box-sizing: border-box;
 }
-@back: red;
+
 html, body {
 	height: 100%;
 }
-html{
-	background-color: @back;
+
+.disEnd(){
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+@light-G: lightGrey;
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 5% 10%;
+	
+	header{
+		width: 80%;
+		height: 20vh;
+		.disEnd();
+	}
+	.Intro{
+		width: 80%;
+		height: 80vh;
+		background-color: @light-G;
+		padding: 5%;
+	}
 }
 
