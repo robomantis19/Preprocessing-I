@@ -77,7 +77,7 @@ html, body {
 @light-G: lightGrey;
 @dark-G: Grey;
 @myborder: 0px solid brown;
-@myborder1: 1px solid lightGrey;
+@myborder1: 2px solid lightGrey;
 .container{
 	
 	border: @myborder;
@@ -106,7 +106,7 @@ html, body {
 	.Intro{
         border: @myborder;
 		width: 80%;
-		height: 230vh;
+		height: 180vh;
 		background-color: @light-G;
 		padding: 5%;
 		div{
@@ -192,9 +192,66 @@ html, body {
 	
 	.End{
 		border: @myborder;
+		width: 80%;
 		
-		height: 40vh;
+		height: 80vh;
+		display: flex;
+		flex-direction: column;
+		
+		align-items: center;
+		.Endinner1{
+			padding: 2% 5%;
+			border: @myborder;
+			height: 80%;
+			width: 80%;
+			h2{
+				padding-bottom: 2%;
+			}
+		}
+		.Endinner2{
+			margin-top: 2%;
+			height: 15%;
+			width: 80%;
+			background: @dark-G;
+			text-align: center;
+			p{
+				font-size: 1.2rem;
+				padding-top: 5px;
+				color:white;
+				font-weight: bold;
+			}
+		}
+	}// end of .End
+	table{
+		height: 90%;
+		width: 100%;
+		border: @myborder1;
+
+		tr{
+			border: @myborder1;
+			font-size: 1.6rem;
+		}
+		tr:nth-child(1){
+			height: 7vh;
+		}
+		tr:nth-child(2), tr:nth-child(4){
+           background-color: @light-G;
+		}
+		td{
+			padding-left: 5%;
+			font-size: 1.4rem;
+		}
+		td:nth-child(2){
+			padding-left: 5%;
+		}
+		td:nth-child(3){
+			padding-left: 15%;
+		}
+		td:nth-child(4){
+			padding-left: 12%;
+		}
 	}
+
 	
 }//End of Container
 

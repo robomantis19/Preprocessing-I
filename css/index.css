@@ -163,7 +163,7 @@ body {
 .container .Intro {
   border: 0px solid brown;
   width: 80%;
-  height: 230vh;
+  height: 180vh;
   background-color: lightGrey;
   padding: 5%;
 }
@@ -241,7 +241,7 @@ body {
   padding: 5%;
   width: 80%;
   height: 20%;
-  border: 1px solid lightGrey;
+  border: 2px solid lightGrey;
 }
 .container .inner1,
 .container .inner2 {
@@ -255,5 +255,60 @@ body {
 }
 .container .End {
   border: 0px solid brown;
-  height: 40vh;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .End .Endinner1 {
+  padding: 2% 5%;
+  border: 0px solid brown;
+  height: 80%;
+  width: 80%;
+}
+.container .End .Endinner1 h2 {
+  padding-bottom: 2%;
+}
+.container .End .Endinner2 {
+  margin-top: 2%;
+  height: 15%;
+  width: 80%;
+  background: Grey;
+  text-align: center;
+}
+.container .End .Endinner2 p {
+  font-size: 1.2rem;
+  padding-top: 5px;
+  color: white;
+  font-weight: bold;
+}
+.container table {
+  height: 90%;
+  width: 100%;
+  border: 2px solid lightGrey;
+}
+.container table tr {
+  border: 2px solid lightGrey;
+  font-size: 1.6rem;
+}
+.container table tr:nth-child(1) {
+  height: 7vh;
+}
+.container table tr:nth-child(2),
+.container table tr:nth-child(4) {
+  background-color: lightGrey;
+}
+.container table td {
+  padding-left: 5%;
+  font-size: 1.4rem;
+}
+.container table td:nth-child(2) {
+  padding-left: 5%;
+}
+.container table td:nth-child(3) {
+  padding-left: 15%;
+}
+.container table td:nth-child(4) {
+  padding-left: 12%;
 }
