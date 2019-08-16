@@ -50,10 +50,355 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: 'Averia Serif Libre', cursive;
 }
+
+.disEnd(){
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.myflex(){
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.myCol(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.TopBotBorder(){
+  border-bottom: 2px solid lightGrey;
+  border-top: 2px solid lightGrey;
+  
+}
+@light-G: lightGrey;
+@dark-G: Grey;
+@myborder: 0px solid brown;
+@myborder1: 2px solid lightGrey;
+
+.container{
+	
+	border: @myborder;
+	width: 100%;
+	height: 260vh;
+	display: flex;
+	flex-direction: column;
+	margin: 5% 10%;
+    
+	@media(max-width: 500px){
+		height: 500vh;
+		
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		margin-left: 10%;
+		
+		
+	}
+	
+	header{
+		width: 80%;
+		height: 20vh;
+		.disEnd();
+		@media(max-width: 500px){
+			height: 100vh;
+			display: flex; 
+			justify-content: center;
+			
+			
+		}
+		
+		nav{
+			width: 40%;
+			
+		  .myflex();
+		  @media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-bottom: 55%;
+			
+		  }
+
+		}
+		a{
+			
+			text-decoration: none;
+			font-size: 1.3rem;
+			color: @dark-G;
+			@media(max-width: 500px){
+				font-size: 3.0rem;
+				height: 10%;
+				padding-top: 75%;
+				font-family: 'Londrina Solid', cursive;
+			}
+
+		}
+		
+	}
+	.Intro{
+        border: @myborder;
+		width: 80%;
+		height: 180vh;
+		background-color: @light-G;
+		padding: 5%;
+		@media(max-width:500px){
+		   width: 80%;
+		   height: 200vh;
+		   background-color: @light-G;
+		}
+		div{
+		  border: @myborder;
+		  height: 60%;
+		  padding-top: 5%;
+		  padding-bottom: 5%;
+		  @media(max-width: 500px){
+			  padding: 0 0 ;
+			  width: 100%;
+			  h1,h2,h3{
+				  padding-left: 10%;
+				font-family: 'Shadows Into Light', cursive;
+			  }
+		  }
+		  .myCol();
+		  h1{
+			  height: 10%;
+		  }
+		  h2{
+			  height: 10%;
+		  }
+		  p{
+			  height: 10%;
+			  @media( max-width: 500px ){
+				padding: 0 0 ;
+				width: 100%;
+			  }
+		  }
+		  button{
+			  color: white;
+			  background: @dark-G;
+			  width: 15%;
+			  height: 15%;
+			  
+		  }
+		} //end of inro div
+	}
+	img{
+		width: 40%;
+		@media(max-width: 500px){
+			width: 100%;
+		}
+	}
+	h1{
+		font-size: 3.0rem;
+		@media(max-width:500px){
+           font-size: 2.3rem;
+		}
+	}
+	h2{
+		font-size: 2.4rem;
+		@media(max-width:500px){
+			font-size: 1.8rem;
+		 }
+	}
+	.Intro div button{
+	    @media( max-width:500px ){
+			height: 20%;
+			width: 100%;
+			font-size: 2.3rem;
+			font-family: 'Londrina Solid', cursive;
+		}
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h4{
+		font-size: 1.8rem;
+	}
+	p{
+		font-size: 1.4rem;
+		line-height: 30px;
+	}
+    .Middle{
+		border: @myborder;
+		width: 80%;
+		height: 180vh;
+		.myflex();
+		.inner1, .inner2{
+			border: @myborder;
+			width: 50%;
+			height: 100%;
+		}
+		@media(max-width:500px){
+			
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+		    .inner1, .inner2{
+				width: 100%;
+				
+			}
+			h2{
+				font-size: 2.6rem;
+				font-family: 'Give You Glory', cursive;
+			}
+		}
+
+	}
+	.inner2{
+		.myCol();
+		h2{
+			height: 20%;
+		}
+		.myTable{ 
+			height: 100%;
+		    border: @myborder;
+			div{
+		      text-align: center;
+			  padding: 5%;
+			  width: 80%;
+			  height: 20%;
+			  border: @myborder1;
+			  @media(max-width:500px){
+				  height: 40%;
+				  h4{
+					font-family: 'Give You Glory', cursive;
+
+				  }
+			  }
+			}
+		}
+	}
+	.inner1, .inner2{
+		padding: 4%;
+		p{
+			margin-top: 6%;
+			padding: 4%;
+			width: 75%;
+			@media(max-width:500px){
+				padding: 0;
+				width: 100%;
+			}
+		}
+	}
+	
+	.End{
+		
+		width: 80%;
+		
+		height: 80vh;
+		display: flex;
+		flex-direction: column;
+		
+		align-items: center;
+		@media(max-width:500px){
+			margin-top: 50%;
+			margin-left: 0;
+			padding-left: 0;
+			height: 200vh;
+		}
+		.Endinner1{
+			margin-top: 2%;
+			padding: 2% 5%;
+			
+			height: 80%;
+			width: 80%;
+			@media(max-width: 500px){
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			h2{
+				padding-bottom: 2%;
+			}
+		}
+		.Endinner2{
+			margin-top: 5%;
+			height: 15%;
+			width: 80%;
+			background: @dark-G;
+			text-align: center;
+			p{
+				font-size: 1.2rem;
+				padding-top: 5px;
+				color:white;
+				font-weight: bold;
+			}
+			@media(max-width:500px){
+				margin-top: 50px;
+			}
+		}
+	}// end of .End
+	table{
+		height: 20vh;
+		width: 50vw;
+		
+		
+
+		tr{
+			.TopBotBorder();
+			font-size: 1.6rem;
+			@media(max-width:500px){
+				border-top: 0px solid white;
+				border-bottom: 0px solid white;
+				display: flex;
+				flex-direction: row;
+				margin-top: 10px;
+				margin-bottom: 50px;
+				width: 100%;
+				th{
+					padding: 5%;
+				}
+			}
+		}
+		tr:nth-child(1){
+			font-weight: bold;
+			height: 7vh;
+		}
+		tr:nth-child(2), tr:nth-child(4){
+		   background-color: @light-G;
+		   @media(max-width: 500px){
+			 width: 155%;
+			 padding-right: 15%;
+			 background-color: @light-G;			
+		    }
+		}
+		td{
+			padding-left: 5%;
+			font-size: 1.4rem;
+			@media(max-width: 500px){
+				width: 100%;
+				padding: 3%;
+				padding-left: 3%;
+				padding-top: 5%;
+				
+			}
+		}
+		td:nth-child(2){
+			padding-left: 5%;
+		}
+		td:nth-child(3){
+			padding-left: 15%;
+		}
+		td:nth-child(4){
+			padding-left: 12%;
+		}
+		@media(max-width:500px){
+			display: flex;
+			flex-direction: column;
+			margin-top: 100px;
+		}
+	}
+
+	
+}//End of Container
 
